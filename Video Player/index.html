@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Feather Icons -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//at.alicdn.com/t/font_o5hd5vvqpoqiwwmi.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Video Player</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="video">
+        <div class="video-container">
+          <video
+            muted
+            class="video-element"
+            autoplay
+            src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+          ></video>
+
+          <!-- Controls -->
+          <div class="video-control-bar">
+            <!-- play button -->
+            <button id="btn-play" class="btn btn-control">
+              <div class="play-icons">
+                <i class="feather icon-play"></i>
+                <i class="feather icon-pause d-none"></i>
+              </div>
+            </button>
+
+            <!-- timer -->
+            <div class="video-timer">
+              <span class="video-timer-current">00:00</span>
+              <span>/</span>
+              <span class="video-timer-duration">00:00</span>
+            </div>
+
+            <!-- progress -->
+            <div class="video-progress">
+              <input
+                min="0"
+                value="0"
+                type="range"
+                class="video-progress-range"
+              />
+              <progress value="0" min="0" class="video-progress-bar"></progress>
+            </div>
+
+            <!-- full screen button -->
+            <button id="btn-full-screen" class="btn btn-control">
+              <i class="feather icon-maximize"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
