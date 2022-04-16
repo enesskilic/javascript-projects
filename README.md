@@ -1,6 +1,6 @@
 # JAVASCRIPT PROJECTS
 
-Javascript sample projects for web developers.
+Javascript projects for web developers.
 
 
 <a name="content"></a>
